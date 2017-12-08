@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="415.0" prefWidth="378.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.proodonto.view.controller.PacienteFormViewController">
+   <children>
+      <Label layoutX="50.0" layoutY="83.0" text="CPF" />
+      <Label layoutX="50.0" layoutY="113.0" text="Nome" />
+      <Label layoutX="50.0" layoutY="143.0" text="Sobrenome" />
+      <Label layoutX="50.0" layoutY="173.0" text="Telefone Residencial" />
+      <Label layoutX="50.0" layoutY="203.0" text="Telefone Comercial" />
+      <Label layoutX="50.0" layoutY="233.0" text="Celular" />
+      <Label layoutX="50.0" layoutY="263.0" text="Data de Nascimento" />
+      <Label layoutX="119.0" layoutY="14.0" text="PACIENTE">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_cadastrar" layoutX="81.0" layoutY="332.0" mnemonicParsing="false" onAction="#cadastrarPaciente" text="Gravar" />
+      <Button layoutX="174.0" layoutY="332.0" mnemonicParsing="false" onAction="#atualizarPaciente" text="Editar" />
+      <Button fx:id="btn_fechar" layoutX="259.0" layoutY="332.0" mnemonicParsing="false" onAction="#fecharJanela" text="Cancelar" />
+      <TextField fx:id="txt_cpf" layoutX="87.0" layoutY="79.0" />
+      <TextField fx:id="txt_nome" layoutX="87.0" layoutY="109.0" />
+      <TextField fx:id="txt_sobrenome" layoutX="115.0" layoutY="139.0" />
+      <TextField fx:id="txt_tel_resi" layoutX="162.0" layoutY="169.0" />
+      <TextField fx:id="txt_tel_comer" layoutX="162.0" layoutY="199.0" />
+      <TextField fx:id="txt_celular" layoutX="94.0" layoutY="229.0" />
+      <DatePicker fx:id="datePicker" layoutX="162.0" layoutY="259.0" prefHeight="25.0" prefWidth="149.0" />
+      <Button fx:id="btn_busca" layoutX="243.0" layoutY="109.0" mnemonicParsing="false" onAction="#buscarNome" text="Buscar" />
+      <ComboBox fx:id="comb_paciente" layoutX="87.0" layoutY="109.0" onAction="#selecionarCombo" prefWidth="150.0" visible="false" />
+      <Button fx:id="btn_cancelarBusca" layoutX="257.0" layoutY="109.0" mnemonicParsing="false" onAction="#cancelarBusca" text="X" visible="false" />
+   </children>
+</AnchorPane>

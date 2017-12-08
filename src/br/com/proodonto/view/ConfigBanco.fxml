@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="293.0" prefWidth="312.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.com.proodonto.view.controller.ConfigBancoViewController">
+   <children>
+      <TextField fx:id="txt_hostname" layoutX="88.0" layoutY="71.0" />
+      <TextField fx:id="txt_username" layoutX="88.0" layoutY="116.0" />
+      <PasswordField fx:id="txt_senha" layoutX="88.0" layoutY="169.0" />
+      <Label layoutX="28.0" layoutY="75.0" text="HostName" />
+      <Label layoutX="29.0" layoutY="120.0" text="Username" />
+      <Label layoutX="42.0" layoutY="173.0" text="Senha" />
+      <Button onAction="#gravar" layoutX="83.0" layoutY="256.0" mnemonicParsing="false" text="Gravar" />
+      <Button onAction="#fecharJanela" fx:id="btn_fechar" layoutX="163.0" layoutY="256.0" mnemonicParsing="false" text="Cancelar" />
+      <Label layoutX="79.0" layoutY="21.0" text="Configurar Banco">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

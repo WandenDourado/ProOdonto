@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="246.0" prefWidth="265.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.proodonto.view.controller.LoginViewController">
+   <children>
+      <Label layoutX="82.0" layoutY="35.0" text="ProOdonto">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_cpf" layoutX="68.0" layoutY="103.0" prefHeight="25.0" prefWidth="139.0" />
+      <Button layoutX="73.0" layoutY="199.0" mnemonicParsing="false" onAction="#botaoEntrar" text="Entrar" />
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="34.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../img/Dente.png" />
+         </image></ImageView>
+      <Label layoutX="20.0" layoutY="107.0" text="Dentista:" />
+      <PasswordField fx:id="txt_senha" layoutX="68.0" layoutY="150.0" prefHeight="25.0" prefWidth="139.0" />
+      <Label layoutX="28.0" layoutY="154.0" text="Senha:" />
+      <Button layoutX="140.0" layoutY="199.0" mnemonicParsing="false" onAction="#abrirConfigJanela" text="Configurar" />
+   </children>
+</AnchorPane>

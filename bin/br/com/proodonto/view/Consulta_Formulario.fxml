@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="415.0" prefWidth="378.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.proodonto.view.controller.ConsultaFormViewController">
+   <children>
+      <Label layoutX="50.0" layoutY="83.0" text="Nome do Paciente" />
+      <Label layoutX="50.0" layoutY="113.0" text="Paciente" />
+      <Label layoutX="50.0" layoutY="143.0" text="Dentista" />
+      <Label layoutX="50.0" layoutY="173.0" text="Procedimento" />
+      <Label layoutX="50.0" layoutY="203.0" text="Data" />
+      <Label layoutX="205.0" layoutY="203.0" text="Horario" />
+      <Label layoutX="50.0" layoutY="233.0" text="Preço" />
+      <Label layoutX="50.0" layoutY="263.0" text="Observação" />
+      <Label layoutX="119.0" layoutY="14.0" text="CONSULTA">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_salvar" layoutX="79.0" layoutY="376.0" mnemonicParsing="false" onAction="#botaoSalvar" text="Salvar" />
+      <Button fx:id="btn_fechar"  onAction="#fecharJanela" layoutX="257.0" layoutY="376.0" mnemonicParsing="false" text="Cancelar" />
+      <TextField fx:id="txt_nome" layoutX="151.0" layoutY="79.0" prefHeight="25.0" prefWidth="90.0" />
+      <Button fx:id="btn_buscar" layoutX="248.0" layoutY="79.0" mnemonicParsing="false" onAction="#buscarNome" text="Buscar" />
+      <ComboBox fx:id="comb_dentista" layoutX="100.0" layoutY="139.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="txt_procedimento" layoutX="131.0" layoutY="169.0" prefHeight="25.0" prefWidth="120.0" />
+      <DatePicker fx:id="datePicker" layoutX="85.0" layoutY="199.0" prefHeight="25.0" prefWidth="114.0" />
+      <TextField fx:id="txt_horario" layoutX="248.0" layoutY="199.0" prefHeight="25.0" prefWidth="69.0" text="hh:mm:ss" />
+      <TextField fx:id="txt_preco" layoutX="84.0" layoutY="229.0" prefHeight="25.0" prefWidth="51.0" />
+      <TextArea fx:id="txt_observacao" layoutX="52.0" layoutY="285.0" prefHeight="84.0" prefWidth="270.0" />
+      <ComboBox fx:id="comb_paciente" layoutX="100.0" layoutY="109.0" prefHeight="25.0" prefWidth="202.0" />      
+   </children>
+</AnchorPane>
